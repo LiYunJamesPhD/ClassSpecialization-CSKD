@@ -1,5 +1,7 @@
 # Class Specialized Knowledge Distillation (Accepted to Asian Conference on Computer Vision 2022)
 
+[Paper Link:](https://openaccess.thecvf.com/content/ACCV2022/papers/Wang_Class_Specialized_Knowledge_Distillation_ACCV_2022_paper.pdf)
+
 ## Abstract
 Knowledge Distillation (KD) is a compression framework that transfers distilled knowledge from a teacher to a smaller student model. KD approaches conventionally address problem domains where the teacher and student network have equal numbers of classes for clas- sification. We provide a knowledge distillation solution tailored for class specialization, where the user requires a compact and performant net- work specializing in a subset of classes from the class set used to train the teacher model. To this end, we introduce a novel knowledge dis- tillation framework, Class Specialized Knowledge Distillation (CSKD), that combines two loss functions: Renormalized Knowledge Distillation (RKD) and Intra-Class Variance (ICV) to render a computationally- efficient, specialized student network. We report results on several pop- ular architectural benchmarks and tasks. In particular, CSKD consis- tently demonstrates significant performance improvements over teacher models for highly restrictive specialization tasks (e.g., instances where the number of subclasses or datasets is relatively small), in addition to outperforming other state-of-the-art knowledge distillation approaches for class specialization tasks.
 
@@ -38,7 +40,7 @@ python main_student.py --mode=eval --studentTask=subclass-cifar10 \
        --student_model_name=student-cifar10-wide_resnet-16-1-checkpoint
 ```
 
-### Reference
+### Citation
 If you feel our work is useful, please cite our work:
 ```
 @inproceedings{wang2022class,
